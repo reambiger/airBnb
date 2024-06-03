@@ -1,0 +1,31 @@
+/* StarRating.css */
+
+.starRating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Adjust the size of the stars */
+  z-index: -100;
+}
+
+.starBox {
+    width: 24px; /* Width of each star */
+    height: 24px; /* Height of each star */
+    margin: 0 2px; /* Spacing between stars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bbbac0; /* Color of empty stars */
+    font-weight: bold; /* Makes the stars bolder */
+    z-index: -100;
+}
+
+.starBox:before {
+    content: "★";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -100;
+}
